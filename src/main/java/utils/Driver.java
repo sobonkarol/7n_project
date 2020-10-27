@@ -19,7 +19,7 @@ public class Driver {
     }
 
     private static WebDriver setUpWebDriver() {
-        System.setProperty("webdriver.chrome.driver", Directory.DRIVER_DIR + "/chromedriver");
+        System.setProperty("webdriver.chrome.driver", Directory.DRIVER_DIR + "/chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments(new String[]{"start-maximized"});
         options.addArguments(new String[]{"enable-automation"});
